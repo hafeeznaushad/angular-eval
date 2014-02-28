@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/ng-grid.min.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.11.0.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular/angular.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular/angular-route.min.js")" type="text/javascript"></script>
+    
+    @*<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js" type="text/javascript"></script>*@
+
+    <script src="@Url.Content("~/Scripts/app.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/controllers.js")" type="text/javascript"></script>
+    @*<script src="@Url.Content("~/Scripts/ng-grid-2.0.7.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        var app = angular.module('myApp', ['ngGrid']);
+        app.controller('MyCtrl', function ($scope) {
+            $scope.myData = [{ name: "Moroni", age: 50 },
+                    { name: "Tiancum", age: 43 },
+                    { name: "Jacob", age: 27 },
+                    { name: "Nephi", age: 29 },
+                    { name: "Enos", age: 34}];
+            $scope.gridOptions = {
+                data: 'myData',
+                columnDefs: [{ field: 'name', displayName: 'Name' }, { field: 'age', displayName: 'Age'}]
+            };
+        });
+        </script>
+
+        <style type="text/css">
+        .gridStyle {
+    border: 1px solid rgb(212,212,212);8
+    width: 400px; 
+    height: 300px;
+}
+</style>*@
+</head>
+<body>
+    
+    <div class="page">
+        <header>
+            <div id="title">
+                <h1>My MVC Application</h1>
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            @*<div class="gridStyle" ng-grid="gridOptions"></div>*@
+            <div ng-view></div>
+            @RenderBody()
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

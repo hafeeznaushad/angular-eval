@@ -1,0 +1,16 @@
+﻿@model System.Collections.Generic.List<KidsCove.Core.Domain.ChildActivityType>
+@using KidsCove.Core.Domain
+
+@{
+    ViewBag.Title = "Activity Type";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<ul>
+@foreach (ChildActivityType cg in Model)
+{
+    <li>@cg.Activity.ToString()</li>
+}
+</ul>
+

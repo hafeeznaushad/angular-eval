@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="KidsCove.Database.Base.Entity" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KidsCove.Database.NHibernateRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAACEAAAAgAAAAAAAgAAA=</HashCode>
+      <FileName>Base\NHibernateRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KidsCove.Database.NHibernateContext" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEABACAAAAACAAQAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Base\NHibernateContext.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KidsCove.Database.Domain.ChildActivityType" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Domain\ChildActivityType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KidsCove.Database.Domain.ChildDetail" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAEAAQAAIAACAAAAAAAAg=</HashCode>
+      <FileName>Domain\ChildDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KidsCove.Database.Domain.ChildGroup" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Domain\ChildGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KidsCove.Database.DataAccess.ChildGroupDataService" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccess\ChildGroupDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="KidsCove.Core.Contracts.DataAccess.IRepository" Collapsed="true">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="KidsCove.Core.Contracts.DataAccess.IChildGroupRepository" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="KidsCove.Database.Domain.ActivityType" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ActivityType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
