@@ -1,0 +1,13 @@
+<div class="ngHeaderSortColumn {{col.headerClass}}" ng-style="{'cursor': col.cursor, 'width': col.width}" ng-class="{ 'ngSorted': !noSortVisible }"> 
+    <div ng-click="col.sort($event)" ng-class="'colt' + col.index" class="ngHeaderText {{col.dataType}}">{{col.displayName}}</div>
+    <div class="ngSortButtonDown" ng-show="col.showSortButtonDown()"></div>
+    <div class="ngSortButtonUp" ng-show="col.showSortButtonUp()"></div>
+    <div class="ngSortPriority">{{col.sortPriority}}</div>
+    <div ng-class="{ ngPinnedIcon: col.pinned, ngUnPinnedIcon: !col.pinned }" ng-click="togglePin(col)" ng-show="col.pinnable"></div>
+</div>
+<div ng-show="col.showFilter()" class="ngFilterContainer" style="" ng-style="{ 'width' : col.width + 10 + 'px' }">
+    <input type="text" ng-click="stopClickProp($event)" placeholder="Filter..." ng-model="col.filterText2" style="float:left;" ng-style="{ 'width' : col.width - 30 + 'px' }" />
+    <div ng-click="col.showFilterOptions($event)" class="ngFilter"></div>
+    <ul class="ngFilterOptionList" ng-model="col.sample" ng-show="col.filterOptionsVisible" style="z-index:9999"><li ng-repeat="status in col.statuses">{{status}}</li></ul>
+</div>
+<div ng-show="col.resizable" class="ngHeaderGrip" ng-click="col.gripClick($event)" ng-mousedown="col.gripOnMouseDown($event)"></div>
